@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Live Button</title>
+    <title>Python Clicker</title>
 </head>
 <body>
 
-<button id="myButton">Loading...</button>
-<button id="tickLabel">Loading...</button>
-<var>tickrate</var
-<script>
-function updateButton() {
-    fetch('/number')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('myButton').innerText = data.value;
-        });
-}
-function updateTickrate) {
-    fetch('/tickrate')
-        .then(response => response.json())
-        .then(data => {
-            tickrate = data.value;
-        });
-}
+<button id="btn">Clicks: 0</button>
 
-// Update every second
-setInterval(tickrate);
-
-// Initial call
-updateButton();
-</script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
